@@ -65,9 +65,9 @@ const sqlUsers = await db
 
 // ? Update
 
-const updatedUser = await db.update(UserTable).set({
-  age: 30
-}).where(eq(UserTable.age, 2))
+// const updatedUser = await db.update(UserTable).set({
+//   age: 30
+// }).where(eq(UserTable.age, 2))
 
 // ? Delete
-const deletedUser = await db.delete(UserTable).where(eq(UserTable.age, 2))
+// const deletedUser = await db.delete(UserTable).where(eq(UserTable.age, 2))

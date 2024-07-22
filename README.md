@@ -10,4 +10,27 @@
   - Adapters for all databases
   - Flexible and unopinionated
   - Create and apply migrations
-  - 
+
+## Key takeaways
+  - Lightweight, flexible, and unopinionated
+  - Provides adapter for all drivers and databases
+  - Drizzlekit -> migrations
+  - Drizzlestudio -> DB client UI
+  - Create schemas 
+    - Table name is first parameter
+    - Provides functions for each databases
+    - Provides database specific datatypes for columns
+    - Constraints can be added by chaining
+    - indexes can be added as the third parameter
+    - Relationships can be added using the references method
+    - Join tables should be created for many to many relationship
+  - Inserting data
+    - Similar to SQL query
+    - Does not return any data unless provided in the returning method
+  - Querying data
+    - 2 styes (SQL like and Query like)
+    - Query like is similar to prisma
+    - To work with relationships, drizzle level relationships should be created
+    - SQL like is simple and similar to SQL queries.
+    - the `sql` function can be used to inject raw sql string
+  = inserting and updating are similar to sql queries
